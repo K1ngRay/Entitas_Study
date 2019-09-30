@@ -1,21 +1,23 @@
 ﻿using Entitas;
 using UnityEngine;
 
-public class GameController : MonoBehaviour {
+public class GameController {
 
-    Systems _systems;
+    readonly Systems _systems;
 
-	void Start () {
-        var contexts = Contexts.sharedInstance;
+    public GameController(Contexts contexts)
+    {
+        _systems = new TutorialSystems(contexts);
+    }
 
-        _systems = new Feature("Systems").Add(new TutorialSystems(contexts));
-
+	public void Initialize()
+    {                    
         _systems.Initialize();
 	}
 	
-	void Update () {
+	public void Execute()
+    {
         _systems.Execute();
-
         _systems.Cleanup();
 	}
 }
