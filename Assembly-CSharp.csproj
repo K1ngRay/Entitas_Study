@@ -87,8 +87,12 @@
     <Compile Include="Assets\Scripts\Components\SpeedComponent.cs" />
     <Compile Include="Assets\Scripts\GameBehavior.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Systems\Cleanup\Cleanup_InputSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Cleanup\Cleanup_PositionSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Cleanup\Cleanup_RotationSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Cleanup\CleanupDebugMessageSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Cleanup\CleanupInputMessageSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Execute\Execute_ControllerSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Execute\LogMouseClickSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Feature\Feature_CarSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Feature\TutorialSystems.cs" />
@@ -97,6 +101,8 @@
     <Compile Include="Assets\Scripts\Systems\Reactive\DebugMessageSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Reactive\InputMessageSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\Reactive\Reactive_InputSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Reactive\Reactive_PositionSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\Reactive\Reactive_RotationSystem.cs" />
     <None Include="Assets\Libraries\Entitas\LICENSE.txt" />
     <None Include="Assets\Libraries\Entitas\Entitas.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">

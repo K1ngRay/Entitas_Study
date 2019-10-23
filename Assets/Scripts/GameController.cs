@@ -3,21 +3,29 @@ using UnityEngine;
 
 public class GameController {
 
-    readonly Systems _systems;
+    //readonly Systems tutorialSystems;
+    readonly Systems carSystems;
 
     public GameController(Contexts contexts)
     {
-        _systems = new TutorialSystems(contexts);
+        //tutorialSystems = new TutorialSystems(contexts);
+    }
+    public GameController(Contexts contexts, GameObject obj, Transform clone)
+    {
+        carSystems = new Feature_CarSystem(contexts, obj, clone);
     }
 
-	public void Initialize()
-    {                    
-        _systems.Initialize();
-	}
+    public void Initialize(Contexts contexts,Transform clone)
+    {
+        //tutorialSystems.Initialize();
+        carSystems.Initialize();
+    }
 	
 	public void Execute()
     {
-        _systems.Execute();
-        _systems.Cleanup();
-	}
+        //tutorialSystems.Execute();
+        //tutorialSystems.Cleanup();
+        carSystems.Execute();
+        carSystems.Cleanup();
+    }
 }

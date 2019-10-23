@@ -5,14 +5,16 @@ using Entitas;
 
 public class Initialize_CreateSystem : IInitializeSystem
 {
-    readonly GameObject car;
+    readonly GameContext context;
+    readonly GameObject prefab;
 
-    public Initialize_CreateSystem(Contexts contexts,GameObject car)
+    public Initialize_CreateSystem(Contexts contexts,GameObject prefab,Transform transform)
     {
-        this.car = car;
+        this.context = contexts.game;
+        this.prefab = prefab;
     }
     public void Initialize()
     {
-        throw new System.NotImplementedException();
+        GameObject obj = GameObject.Instantiate(prefab);
     }
 }

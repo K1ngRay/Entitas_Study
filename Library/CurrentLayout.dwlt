@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 509, y: 722}
   m_MaxSize: {x: 14004, y: 18072}
   vertical: 0
-  controlID: 51
+  controlID: 13
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 722}
   m_MaxSize: {x: 10002, y: 18072}
   vertical: 1
-  controlID: 52
+  controlID: 14
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 53
+  controlID: 15
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,10 +266,10 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 1787
-  m_MinSize: {x: 277, y: 274}
-  m_MaxSize: {x: 4002, y: 8024}
+  m_MinSize: {x: 277, y: 298}
+  m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 141
+  controlID: 84
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -289,8 +289,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 1116
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -489,13 +489,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.22919482, y: 0.5424336, z: -0.15680015, w: -0.7928741}
+    m_Target: {x: -0.13519827, y: 0.06386014, z: -0.008731898, w: -0.988722}
     speed: 2
-    m_Value: {x: -0.22919482, y: 0.5424336, z: -0.15680015, w: -0.7928741}
+    m_Value: {x: -0.135198, y: 0.063860014, z: -0.00873188, w: -0.98872}
   m_Size:
-    m_Target: 42.133434
+    m_Target: 157.51045
     speed: 2
-    m_Value: 42.133434
+    m_Value: 157.51045
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -588,34 +588,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Systems/Reactive
+    - Assets/Generated/Game/Components
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Systems/Reactive
+  - Assets/Generated/Game/Components
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\WorkFile\File_of_Unity_2018.4\Entitas_Study
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae0b0000
-    m_LastClickedID: 2990
-    m_ExpandedIDs: 00000000100a00001a0a0000440a0000120c00004a0c0000560c00008429000086290000882900008a290000
+    m_SelectedIDs: bc280000
+    m_LastClickedID: 10428
+    m_ExpandedIDs: 00000000da260000e426000010270000ea2800002429000030290000b4290000b6290000b8290000ba290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Execute
-      m_OriginalName: Execute
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 2812
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -629,7 +629,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000100a00001a0a0000440a0000120c00004a0c0000560c00008429000086290000882900008a290000
+    m_ExpandedIDs: 00000000da260000e426000010270000ea2800002429000030290000b4290000b6290000b8290000ba290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -660,15 +660,15 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000c27d0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TutorialSystems
-      m_OriginalName: TutorialSystems
+      m_Name: GameDebugMessageComponent
+      m_OriginalName: GameDebugMessageComponent
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 2070
+      m_UserData: 2174
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -748,9 +748,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4a090000
+      m_SelectedIDs: 7e080000
       m_LastClickedID: 0
-      m_ExpandedIDs: 58adffff68adffff9aadffffaaadffff7aaeffffc8c0ffffbacaffff0af2ffffc0fbfffff4ffffff
+      m_ExpandedIDs: b4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

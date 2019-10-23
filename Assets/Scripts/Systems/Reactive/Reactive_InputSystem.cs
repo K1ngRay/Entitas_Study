@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Reactive_InputSystem : ReactiveSystem<GameEntity>
 {
-
-    readonly Transform car;
     readonly GameContext context;
-    public Reactive_InputSystem(Contexts contexts,Transform car) : base(contexts.game)
+    public Reactive_InputSystem(Contexts contexts) : base(contexts.game)
     {
-        this.car = car;
         this.context = contexts.game;
     }
 
@@ -24,7 +21,7 @@ public class Reactive_InputSystem : ReactiveSystem<GameEntity>
             }
             if (keyCode == KeyCode.A)
             {
-                context.CreateEntity().AddRotation(new Vector3(0f, 1f, 0f));
+                context.CreateEntity().AddRotation(new Vector3(0f, -1f, 0f));
             }
             if (keyCode == KeyCode.S)
             {
@@ -32,18 +29,18 @@ public class Reactive_InputSystem : ReactiveSystem<GameEntity>
             }
             if (keyCode == KeyCode.D)
             {
-                context.CreateEntity().AddRotation(new Vector3(0f, -1f, 0f));
+                context.CreateEntity().AddRotation(new Vector3(0f, 1f, 0f));
             }
         }
     }
 
     protected override bool Filter(GameEntity entity)
     {
-        throw new System.NotImplementedException();
+        return entity.hasInput;
     }
 
     protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
     {
-        throw new System.NotImplementedException();
+        return context.CreateCollector(GameMatcher.Input);
     }
 }
